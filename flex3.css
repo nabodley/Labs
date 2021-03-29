@@ -1,11 +1,8 @@
 .navigation {
 	list-style: none;
 	margin: 0;
-}
 	background: tomato;
-	
 	display: flex;
-	
 	flex-flow: row wrap;
 	justify-content: flex-end;
 }
@@ -17,16 +14,16 @@
 	color: white;
 }
 .navigation a:hover {
-	background darken(tomato, 2%);
+	background: darken(tomato, 2%);
 }
 
-@media all and (min-width: 800px) {
+@media all and (max-width: 800px) {
 	.navigation {
 	justify-content: space-around;
 	}
 }
 
-@media all and (min-width: 600px) {
+@media all and (max-width: 600px) {
 	.navigation {
 	flex-flow: column wrap;
 	padding: 0;
@@ -34,7 +31,7 @@
 	.navigation a {
 		text-align: center;
 		padding: 10px;
-		border-top: 1px solid grba(256,255,255,0.3);
+		border-top: 1px solid rgba(255,255,255,0.3);
 		border-bottom: 1px solid rgba(0,0,0,0.1);
 	}
 	
